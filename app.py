@@ -31,9 +31,9 @@ with st.expander('Analizar Polaridad y Subjetividad en un texto'):
         blob = TextBlob(text1)
        
         
-        st.write('Polaridad: ', round(blob.sentiment.polarity,2))
-        st.write('Subjectividad: ', round(blob.sentiment.subjectivity,2))
-        x=round(blob.sentiment.polaridad,2)
+        st.write('Polarity: ', round(blob.sentiment.polarity,2))
+        st.write('Subjectivity: ', round(blob.sentiment.subjectivity,2))
+        x=round(blob.sentiment.polarity,2)
         if x >= 0.5:
             st.write( 'Estas feliz')
             Image.open('Feliz.jpg')
